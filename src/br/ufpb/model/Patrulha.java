@@ -13,24 +13,12 @@ import br.ufpb.exception.AfundouException;
  */
 public class Patrulha implements Embarcacao {
 
-	private int tam;
 	private Tipo tipo;
 	private int life;
 
-	public Patrulha(int tam, Tipo tipo, int life) {
-		this.tam = tam;
-		this.tipo = tipo;
-		this.life = life;
-	}
-
-	@Override
-	public int getTamanho() {
-		return tam;
-	}
-
-	@Override
-	public void setTamanho(int tam) {
-		this.tam = tam;
+	public Patrulha() {
+		this.tipo = Tipo.PATRULHA;
+		this.life = Tipo.PATRULHA.getTam();
 	}
 
 	@Override

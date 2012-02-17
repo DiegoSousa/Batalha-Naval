@@ -7,24 +7,12 @@ import br.ufpb.exception.AfundouException;
 
 public class Submarino implements Embarcacao {
 
-	private int tam;
 	private Tipo tipo;
 	private int life;
 
-	public Submarino(int tam, Tipo tipo, int life) {
-		this.tam = tam;
-		this.tipo = tipo;
-		this.life = life;
-	}
-
-	@Override
-	public int getTamanho() {
-		return tam;
-	}
-
-	@Override
-	public void setTamanho(int tam) {
-		this.tam = tam;
+	public Submarino() {
+		this.tipo = Tipo.SUBMARINO;
+		this.life = Tipo.SUBMARINO.getTam();
 	}
 
 	@Override
@@ -49,7 +37,6 @@ public class Submarino implements Embarcacao {
 		if (life == 0) {
 			throw new AfundouException("AFUNDOU");
 		}
-
 	}
 
 }

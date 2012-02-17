@@ -3,10 +3,6 @@ package br.ufpb.model;
 import br.ufpb.exception.AfundouException;
 
 public interface Embarcacao {
-
-  int getTamanho();
-  
-  void setTamanho(int tam);
   
   Tipo getTipo();
   
