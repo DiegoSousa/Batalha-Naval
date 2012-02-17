@@ -57,9 +57,9 @@ public class Tabuleiro {
         this.tabuleiro[x][y] = null;
         return "ACERTOU";
       } catch(Exception e) {
-        
+        Embarcacao em = this.tabuleiro[x][y];
         this.tabuleiro[x][y] = null;
-        return "AFUNDOU " + this.tabuleiro[x][y].getTipo();
+        return "AFUNDOU " + em.getTipo();
       }
     } else {
       return "AGUA";
