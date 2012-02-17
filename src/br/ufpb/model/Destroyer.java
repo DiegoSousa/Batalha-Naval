@@ -14,7 +14,7 @@ public class Destroyer implements Embarcacao {
     this.tipo = tipo;
     this.life = life;
   }
-  
+
   public Destroyer() {
     this.tam = Tipo.DESTROYER.getTam();
     this.tipo = Tipo.DESTROYER;
