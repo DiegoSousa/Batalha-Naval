@@ -1,5 +1,7 @@
 package br.ufpb.model;
 
+import br.ufpb.exception.AfundouException;
+
 public interface Embarcacao {
 
   int getTamanho();
@@ -12,6 +14,6 @@ public interface Embarcacao {
   
   int getLife();
   
-  void hit() throws Exception; //Criar exception AfundouException.
-  
+  void hit() throws AfundouException;
+  																	
 }
