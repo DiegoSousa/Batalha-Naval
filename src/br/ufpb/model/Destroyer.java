@@ -1,14 +1,13 @@
 package br.ufpb.model;
 
+import br.ufpb.exception.AfundouException;
 
 public class Destroyer implements Embarcacao {
   
   private int tam;
-  
   private Tipo tipo;
-  
   private int life;
-  
+ 
   protected Destroyer(int tam, Tipo tipo, int life) {
     this.tam = tam;
     this.tipo = tipo;
@@ -47,10 +46,8 @@ public class Destroyer implements Embarcacao {
   }
 
   @Override
-  public void hit() throws Exception {
+  public void hit() throws AfundouException {
     this.life--;
-    if(life == 0) throw new Exception("AFUNDOU");
+    if(life == 0) throw new AfundouException("AFUNDOU");
   }
-  
-  
 }

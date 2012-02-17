@@ -1,5 +1,7 @@
 package br.ufpb.model;
 
+import br.ufpb.exception.AfundouException;
+
 public class Tabuleiro {
   
   private Embarcacao[][] tabuleiro;
@@ -13,10 +15,9 @@ public class Tabuleiro {
   }
   
   public void putEmbarcacao(int x1, int y1, int x2, int y2) {
-    //TODO
   }
   
-  public void shootAt(int x, int y) throws Exception {
+  public void shootAt(int x, int y) throws AfundouException {
     if(this.tabuleiro[x][y] != null) {
       try {
         tabuleiro[x][y].hit();
