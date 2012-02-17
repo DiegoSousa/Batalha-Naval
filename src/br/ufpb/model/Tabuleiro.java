@@ -46,19 +46,23 @@ public class Tabuleiro {
     }
   }
 
+  public Embarcacao[][] getTabuleiro() {
+    return this.tabuleiro;
+  }
   
-  public void shootAt(int x, int y) throws AfundouException {
+  public String shootAt(int x, int y) throws AfundouException {
     if(this.tabuleiro[x][y] != null) {
       try {
         this.tabuleiro[x][y].hit();
         this.tabuleiro[x][y] = null;
+        return "ACERTOU";
       } catch(Exception e) {
-        System.out.println("AFUNDOU " + this.tabuleiro[x][y].getTipo());
+        
         this.tabuleiro[x][y] = null;
+        return "AFUNDOU " + this.tabuleiro[x][y].getTipo();
       }
-      System.out.println("ACERTOU");
     } else {
-      System.out.println("AGUA");
+      return "AGUA";
     }
   }
 }
