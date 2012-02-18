@@ -1,4 +1,4 @@
-package br.ufpb.model;
+package batalhanaval;
 
 public enum Tipo {
 

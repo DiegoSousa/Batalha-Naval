@@ -1,24 +1,17 @@
 /**
  * 
  */
-package br.ufpb.model;
+package batalhanaval;
 
-import br.ufpb.exception.AfundouException;
 
-/**
- * Description of the class
- * 
- * @author Diego Sousa - www.diegosousa.com
- * @version 1.0 Copyright (C) 2012 Diego Sousa de Azevedo
- */
-public class Patrulha implements Embarcacao {
+public class Submarino implements Embarcacao {
 
 	private Tipo tipo;
 	private int life;
 
-	public Patrulha() {
-		this.tipo = Tipo.PATRULHA;
-		this.life = Tipo.PATRULHA.getTam();
+	public Submarino() {
+		this.tipo = Tipo.SUBMARINO;
+		this.life = Tipo.SUBMARINO.getTam();
 	}
 
 	@Override
@@ -29,6 +22,7 @@ public class Patrulha implements Embarcacao {
 	@Override
 	public void setTipo(Tipo tipo) {
 		this.tipo = tipo;
+
 	}
 
 	@Override
@@ -43,4 +37,5 @@ public class Patrulha implements Embarcacao {
 			throw new AfundouException("AFUNDOU");
 		}
 	}
+
 }

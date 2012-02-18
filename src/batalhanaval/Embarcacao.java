@@ -1,6 +1,5 @@
-package br.ufpb.model;
+package batalhanaval;
 
-import br.ufpb.exception.AfundouException;
 
 public interface Embarcacao {
   

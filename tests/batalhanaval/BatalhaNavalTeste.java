@@ -1,12 +1,8 @@
-package br.ufpb.teste;
+package batalhanaval;
 
 import static org.junit.Assert.*;
 import org.junit.Test;
-import br.ufpb.exception.AfundouException;
-import br.ufpb.model.Destroyer;
-import br.ufpb.model.Embarcacao;
-import br.ufpb.model.Tabuleiro;
-import br.ufpb.model.Tipo;
+
 
 public class BatalhaNavalTeste {
 

@@ -1,17 +1,44 @@
-package br.ufpb.model;
+package batalhanaval;
 
-import br.ufpb.exception.AfundouException;
 
 public class Tabuleiro {
   
+  private static final int MIN_ALT = 15;
+  
+  private static final int MIN_LARG = 15;
+  
   private Embarcacao[][] tabuleiro;
   
+  private int altura;
+  
+  private int largura;
+  
   public Tabuleiro() {
-    this.tabuleiro = new Embarcacao[15][15];
+    this.largura = MIN_LARG;
+    this.altura = MIN_ALT;
+    this.tabuleiro = new Embarcacao[MIN_LARG][MIN_ALT];
   }
   
   public Tabuleiro(int n, int m) {
+    this.largura = n;
+    this.altura = m;
     this.tabuleiro = new Embarcacao[n][m];
+  }
+  
+  public int getAltura() {
+    return this.altura;
+  }
+  
+  public void setAltura(int altura) {
+    this.altura = altura;
+  }
+  
+  public int getLargura() {
+    return this.largura;
+  }
+  
+  public void setLargura(int largura) {
+    this.largura = largura;
   }
   
   private String capitalize(String s) {

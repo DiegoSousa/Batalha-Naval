@@ -1,4 +1,4 @@
-package br.ufpb.exception;
+package batalhanaval;
 
 public class AfundouException extends Exception {
 

@@ -1,18 +1,14 @@
-/**
- * 
- */
-package br.ufpb.model;
+package batalhanaval;	
 
-import br.ufpb.exception.AfundouException;
 
-public class Submarino implements Embarcacao {
+public class PortaAvioes implements Embarcacao {
 
 	private Tipo tipo;
 	private int life;
 
-	public Submarino() {
-		this.tipo = Tipo.SUBMARINO;
-		this.life = Tipo.SUBMARINO.getTam();
+	public PortaAvioes() {
+		this.tipo = Tipo.PORTA_AVIOES;
+		this.life = Tipo.PORTA_AVIOES.getTam();
 	}
 
 	@Override
@@ -23,7 +19,6 @@ public class Submarino implements Embarcacao {
 	@Override
 	public void setTipo(Tipo tipo) {
 		this.tipo = tipo;
-
 	}
 
 	@Override
@@ -38,5 +33,4 @@ public class Submarino implements Embarcacao {
 			throw new AfundouException("AFUNDOU");
 		}
 	}
-
 }

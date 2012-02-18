@@ -1,15 +1,23 @@
-package br.ufpb.model;	
+/**
+ * 
+ */
+package batalhanaval;
 
-import br.ufpb.exception.AfundouException;
 
-public class PortaAvioes implements Embarcacao {
+/**
+ * Description of the class
+ * 
+ * @author Diego Sousa - www.diegosousa.com
+ * @version 1.0 Copyright (C) 2012 Diego Sousa de Azevedo
+ */
+public class Patrulha implements Embarcacao {
 
 	private Tipo tipo;
 	private int life;
 
-	public PortaAvioes() {
-		this.tipo = Tipo.PORTA_AVIOES;
-		this.life = Tipo.PORTA_AVIOES.getTam();
+	public Patrulha() {
+		this.tipo = Tipo.PATRULHA;
+		this.life = Tipo.PATRULHA.getTam();
 	}
 
 	@Override
