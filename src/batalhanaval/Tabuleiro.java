@@ -1,5 +1,6 @@
 package batalhanaval;
 
+import java.sql.*;
 
 public class Tabuleiro {
   
